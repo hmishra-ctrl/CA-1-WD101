@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #173b6c;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hero */
+.hero {
+    background: white;
+    text-align: center;
+    padding: 70px 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #173b6c;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button,
+button {
+    background: #173b6c;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background: #24558f;
+}
+
+/* About */
+.about {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.about h2,
+.courses h2,
+.contact h2 {
+    color: #173b6c;
+}
+
+/* Courses */
+.courses {
+    margin-bottom: 25px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.course-card h3 {
+    color: #173b6c;
+}
+
+/* Contact */
+.contact {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background: #173b6c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+}
